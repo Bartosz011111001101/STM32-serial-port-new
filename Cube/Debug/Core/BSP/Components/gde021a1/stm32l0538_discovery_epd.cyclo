@@ -1,0 +1,17 @@
+../Core/BSP/Components/gde021a1/stm32l0538_discovery_epd.c:97:9:BSP_EPD_Init	1
+../Core/BSP/Components/gde021a1/stm32l0538_discovery_epd.c:125:10:BSP_EPD_GetXSize	1
+../Core/BSP/Components/gde021a1/stm32l0538_discovery_epd.c:135:10:BSP_EPD_GetYSize	1
+../Core/BSP/Components/gde021a1/stm32l0538_discovery_epd.c:145:6:BSP_EPD_SetFont	1
+../Core/BSP/Components/gde021a1/stm32l0538_discovery_epd.c:155:8:BSP_EPD_GetFont	1
+../Core/BSP/Components/gde021a1/stm32l0538_discovery_epd.c:165:6:BSP_EPD_Clear	2
+../Core/BSP/Components/gde021a1/stm32l0538_discovery_epd.c:184:6:BSP_EPD_DisplayChar	1
+../Core/BSP/Components/gde021a1/stm32l0538_discovery_epd.c:203:6:BSP_EPD_DisplayStringAt	7
+../Core/BSP/Components/gde021a1/stm32l0538_discovery_epd.c:263:6:BSP_EPD_DisplayStringAtLine	1
+../Core/BSP/Components/gde021a1/stm32l0538_discovery_epd.c:275:6:BSP_EPD_DrawHLine	2
+../Core/BSP/Components/gde021a1/stm32l0538_discovery_epd.c:295:6:BSP_EPD_DrawVLine	2
+../Core/BSP/Components/gde021a1/stm32l0538_discovery_epd.c:316:6:BSP_EPD_DrawRect	1
+../Core/BSP/Components/gde021a1/stm32l0538_discovery_epd.c:335:6:BSP_EPD_FillRect	2
+../Core/BSP/Components/gde021a1/stm32l0538_discovery_epd.c:357:6:BSP_EPD_DrawImage	2
+../Core/BSP/Components/gde021a1/stm32l0538_discovery_epd.c:374:6:BSP_EPD_CloseChargePump	1
+../Core/BSP/Components/gde021a1/stm32l0538_discovery_epd.c:388:6:BSP_EPD_RefreshDisplay	2
+../Core/BSP/Components/gde021a1/stm32l0538_discovery_epd.c:414:14:DrawChar	2

@@ -1,0 +1,10 @@
+../Core/BSP/Components/gde021a1/gde021a1.c:127:6:gde021a1_Init	16	static
+../Core/BSP/Components/gde021a1/gde021a1.c:169:6:gde021a1_WritePixel	16	static
+../Core/BSP/Components/gde021a1/gde021a1.c:186:6:gde021a1_SetDisplayWindow	24	static
+../Core/BSP/Components/gde021a1/gde021a1.c:209:10:gde021a1_GetEpdPixelWidth	8	static
+../Core/BSP/Components/gde021a1/gde021a1.c:219:10:gde021a1_GetEpdPixelHeight	8	static
+../Core/BSP/Components/gde021a1/gde021a1.c:230:6:gde021a1_WriteReg	16	static
+../Core/BSP/Components/gde021a1/gde021a1.c:242:9:gde021a1_ReadReg	16	static
+../Core/BSP/Components/gde021a1/gde021a1.c:256:6:gde021a1_RefreshDisplay	8	static
+../Core/BSP/Components/gde021a1/gde021a1.c:274:6:gde021a1_CloseChargePump	8	static
+../Core/BSP/Components/gde021a1/gde021a1.c:297:6:gde021a1_DrawImage	40	static
