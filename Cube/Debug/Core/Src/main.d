@@ -33,8 +33,9 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  ../Core/BSP/Components/gde021a1/stm32l0538_discovery.h \
  ../Core/BSP/Components/gde021a1/stm32l0538_discovery_epd.h \
  ../Core/BSP/Components/gde021a1/gde021a1.h \
- ../Core/BSP/Components/gde021a1/fontsepd.h ../Core/SSD1306/fonts.h \
- ../Core/SSD1306/ssd1306.h ../Core/SSD1306/fonts.h ../Core/SSD1306/test.h
+ ../Core/BSP/Components/gde021a1/fontsepd.h \
+ ../Core/SSD1306/ssd1306_fonts.h ../Core/SSD1306/ssd1306.h \
+ ../Core/SSD1306/ssd1306_conf_template.h ../Core/SSD1306/ssd1306.h
 ../Core/Inc/main.h:
 ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal.h:
 ../Core/Inc/stm32l0xx_hal_conf.h:
@@ -71,7 +72,7 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 ../Core/BSP/Components/gde021a1/stm32l0538_discovery_epd.h:
 ../Core/BSP/Components/gde021a1/gde021a1.h:
 ../Core/BSP/Components/gde021a1/fontsepd.h:
-../Core/SSD1306/fonts.h:
+../Core/SSD1306/ssd1306_fonts.h:
 ../Core/SSD1306/ssd1306.h:
-../Core/SSD1306/fonts.h:
-../Core/SSD1306/test.h:
+../Core/SSD1306/ssd1306_conf_template.h:
+../Core/SSD1306/ssd1306.h:

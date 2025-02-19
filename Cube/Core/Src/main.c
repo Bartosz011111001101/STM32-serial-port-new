@@ -29,9 +29,9 @@
 #include "stm32l0538_discovery.h"
 #include "stm32l0538_discovery_epd.h"
 
-#include "fonts.h"
+#include "ssd1306_fonts.h"
 #include "ssd1306.h"
-#include "test.h"
+
 
 
 /* USER CODE END Includes */
@@ -225,7 +225,7 @@ uint8_t buffer[sizeof(Logo)]; // obszar pamieci o ulotnej zawartosci
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
-
+void clear_ssd1306();
 void refreash_display();
 
 void sendHexData(uint8_t *data, size_t size, UART_HandleTypeDef *huart) {
@@ -293,12 +293,20 @@ void myprintf(const char *fmt, ...)
 */
 void refreash_display(char tekst[])
 {
-	SSD1306_Clear();
-	SSD1306_GotoXY(0, 0);
-	SSD1306_Puts (tekst, &Font_11x18, 1);
+	clear_ssd1306();
+	ssd1306_SetCursor(0, 0);
+	ssd1306_WriteString (tekst, Font_11x18, 1);
 	HAL_Delay(10);
-	SSD1306_UpdateScreen(); // Display
+	ssd1306_UpdateScreen(); // Display
 }
+
+
+void clear_ssd1306()
+{
+	ssd1306_Fill(0);  // Wypełnij ekran czarnym kolorem
+	ssd1306_UpdateScreen();
+}
+
 int _write(int file, char *ptr, int len)
 {
     HAL_UART_Transmit(&huart1, (uint8_t*)ptr, len, HAL_MAX_DELAY);
@@ -339,9 +347,9 @@ int main(void)
   MX_SPI1_Init();
   MX_I2C1_Init();
   /* USER CODE BEGIN 2 */
-  SSD1306_Init();
+  ssd1306_Init();
   HAL_Delay(100);
-  SSD1306_GotoXY (0,0);
+  ssd1306_SetCursor(0,0);
   HAL_UART_Receive_IT(&huart1, buffer, sizeof(buffer));
   /* USER CODE END 2 */
 
@@ -384,11 +392,11 @@ int main(void)
 	 else if (HAL_GPIO_ReadPin(SSD1306_GPIO_Port, SSD1306_Pin) == GPIO_PIN_RESET)
 	   {
 		HAL_GPIO_WritePin(LED_GPIO_Port, LED_Pin, GPIO_PIN_RESET);
-		SSD1306_Clear();
-		SSD1306_GotoXY(0, 0);
-		SSD1306_Puts ("", &Font_11x18, 1);
+		clear_ssd1306();
+		ssd1306_SetCursor(0, 0);
+		ssd1306_WriteString ("", Font_11x18, 1);
 		HAL_Delay(10);
-		SSD1306_UpdateScreen(); // Display
+		ssd1306_UpdateScreen(); // Display
 		HAL_GPIO_WritePin(LED_GPIO_Port, LED_Pin, GPIO_PIN_RESET);
 		HAL_Delay(1000);
 	   }
