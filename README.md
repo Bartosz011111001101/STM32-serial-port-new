@@ -52,3 +52,5 @@ Technologies Used:
 - SPI for epaper 
 - Serial Communication (UART)
 
+Library SSD1306 is taken from: https://github.com/afiskon/stm32-ssd1306
+
